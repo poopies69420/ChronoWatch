@@ -1,0 +1,22 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "description": "Message content"
+    },
+    "recipient_email": {
+      "type": "string",
+      "description": "Email of the recipient, or 'global' for public chat"
+    },
+    "anime_mal_id": {
+      "type": "number",
+      "description": "Related anime if discussing specific anime"
+    }
+  },
+  "required": [
+    "text",
+    "recipient_email"
+  ]
+}

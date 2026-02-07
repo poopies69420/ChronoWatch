@@ -1,0 +1,87 @@
+{
+  "name": "AnimeEntry",
+  "type": "object",
+  "properties": {
+    "mal_id": {
+      "type": "number",
+      "description": "MyAnimeList ID from Jikan API"
+    },
+    "title": {
+      "type": "string",
+      "description": "Anime title"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Cover image URL"
+    },
+    "synopsis": {
+      "type": "string",
+      "description": "Anime synopsis"
+    },
+    "score": {
+      "type": "number",
+      "description": "MAL score"
+    },
+    "episodes_total": {
+      "type": "number",
+      "description": "Total episodes"
+    },
+    "episodes_watched": {
+      "type": "number",
+      "description": "Episodes watched by user",
+      "default": 0
+    },
+    "user_score": {
+      "type": "number",
+      "description": "User's personal rating 1-10"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "watching",
+        "completed",
+        "plan_to_watch",
+        "dropped"
+      ],
+      "default": "plan_to_watch",
+      "description": "User's watch status"
+    },
+    "genres": {
+      "type": "string",
+      "description": "Comma-separated genre names"
+    },
+    "studios": {
+      "type": "string",
+      "description": "Comma-separated studio names"
+    },
+    "type": {
+      "type": "string",
+      "description": "TV, Movie, OVA, etc."
+    },
+    "aired": {
+      "type": "string",
+      "description": "Aired date string"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Personal notes about this anime"
+    },
+    "tags": {
+      "type": "string",
+      "description": "Comma-separated custom tags"
+    },
+    "year": {
+      "type": "number",
+      "description": "Year aired"
+    },
+    "rewatching": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether rewatching"
+    }
+  },
+  "required": [
+    "mal_id",
+    "title"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "CustomList",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "List name"
+    },
+    "description": {
+      "type": "string",
+      "description": "List description"
+    },
+    "anime_ids": {
+      "type": "string",
+      "description": "Comma-separated MAL IDs"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether list is public"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

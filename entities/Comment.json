@@ -1,0 +1,22 @@
+{
+  "name": "Comment",
+  "type": "object",
+  "properties": {
+    "anime_mal_id": {
+      "type": "number",
+      "description": "Anime being discussed"
+    },
+    "text": {
+      "type": "string",
+      "description": "Comment text"
+    },
+    "parent_comment_id": {
+      "type": "string",
+      "description": "ID of parent comment for threading"
+    }
+  },
+  "required": [
+    "anime_mal_id",
+    "text"
+  ]
+}
